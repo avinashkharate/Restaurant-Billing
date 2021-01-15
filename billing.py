@@ -1,5 +1,5 @@
 class Food:
-    def setData(self, name, code, rate):
+    def __init__(self, name, code, rate):
         self.name = name
         self.code = code
         self.rate = rate
@@ -8,19 +8,19 @@ class Food:
         return self.rate*quantity
 
 
-hot_coffee = Food()
-hot_coffee.setData("Hot Coffee", 1, 70)
+hot_coffee = Food("Hot Coffee", 1, 70)
+# hot_coffee.setData("Hot Coffee", 1, 70)
 
-cold_coffee = Food()
-cold_coffee.setData("Cold Coffee", 2, 100)
+cold_coffee = Food("Cold Coffee", 2, 100)
+# cold_coffee.setData("Cold Coffee", 2, 100)
 
-cold_coffee_ice = Food()
-cold_coffee_ice.setData("Ice Cold Coffee", 3, 120)
+cold_coffee_ice = Food("Ice Cold Coffee", 3, 120)
+# cold_coffee_ice.setData("Ice Cold Coffee", 3, 120)
 
-french_fries = Food()
-french_fries.setData("French Fries", 4, 60)
+french_fries = Food("French Fries", 4, 60)
+# french_fries.setData("French Fries", 4, 60)
 
-pizza = Food()
+# pizza = Food()
 # sandwich = Food()
 # capichino = Food()
 # masala_fries= Food()
